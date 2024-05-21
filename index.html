@@ -12,30 +12,31 @@
     <section class="w-full h-screen flex justify-center items-center bg-slate-500">
         <div class="w-96 h-[55%] bg-gray-300 flex flex-col justify-center items-center p-4 gap-4">
             <div class="w-full h-[15%] flex justify-between">
-                <input type="text" class="w-[77%] p-2 border border-gray-400 rounded text-2xl">
-                <button class="w-[23%] bg-green-800 text-white text-xl p-2 rounded">C</button>
+                <input type="text" id="content" class="w-[77%] p-2 border border-gray-400 rounded text-2xl" readonly>
+                <button id="clear" class="w-[23%] bg-green-800 text-white text-xl p-2 rounded">C</button>
             </div>
-            <div class="w-full h-[85%] grid grid-cols-4 gap-3">
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">1</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">2</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">3</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">+</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">4</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">5</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">6</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">*</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">7</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">8</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">9</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">-</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">0</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">.</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">/</button>
-                <button class="bg-green-800 text-white text-2xl p-4 rounded">=</button>
+            <div class="content-1 w-full h-[85%] grid grid-cols-4 gap-3">
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="1">1</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="2">2</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="3">3</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-operator="+">+</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="4">4</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="5">5</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="6">6</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-operator="*">*</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="7">7</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="8">8</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="9">9</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-operator="-">-</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-number="0">0</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-operator=".">.</button>
+                <button class="bg-green-800 text-white text-2xl p-4 rounded" data-operator="/">/</button>
+                <button id="equals" class="bg-green-800 text-white text-2xl p-4 rounded">=</button>
             </div>
         </div>
     </section>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
